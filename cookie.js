@@ -1,7 +1,7 @@
 /*! cookie function. get, set, or forget a cookie. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT */
 ;(function(root, cookie) {
     if (typeof define === 'function' && define.amd) {
-        // AMD. Register bLazy as an anonymous module
+        // AMD. Register cookie as an anonymous module
         define(cookie);
     } else if (typeof exports === 'object') {
         // Node. Does not work with strict CommonJS, but
@@ -9,7 +9,7 @@
         // like Node.
         module.exports = cookie();
     } else {
-        // Browser globals. Register bLazy on window
+        // Browser globals. Register cookie on window
         root.cookie = cookie();
     }
 })(this, function () {
